@@ -1,0 +1,10 @@
+﻿const router = require("express").Router();
+const c = require("../controllers/vendorsController");
+router.post("/", c.create);
+router.get("/", c.list);
+router.get("/balances", c.balances);
+router.get("/:id/balance", c.balance);
+router.get("/:id", c.get);
+router.put("/:id", c.update);
+router.delete("/:id", c.remove);
+module.exports = router;
