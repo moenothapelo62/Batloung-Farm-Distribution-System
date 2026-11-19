@@ -2,13 +2,19 @@
 -- Consistent: line totals sum to purchase/sale totals; statuses/paid amounts/balances are coherent.
 USE batloung_farm;
 
--- Suppliers (across SA provinces)
+-- Supplier businesses and public office contacts verified on company websites.
+-- These are sample records, not evidence of actual trading relationships.
+-- ZZ2: https://www.zz2.co.za/contact-us
+-- Westfalia Fruit: https://www.westfaliafruit.com/contact-us
+-- Mouton Citrus: https://moutoncitrus.co.za/
+-- Fruitways: https://fruitways.co.za/contact/
+-- Capespan: https://www.capespan.com/contact-us-2025/
 INSERT INTO suppliers (business_name, contact_person, phone, province, address) VALUES
-('Highveld Fresh Produce', 'Thabo Mokoena', '+27 82 111 2233', 'Gauteng', 'Fox Street, Johannesburg'),
-('Free State Orchards', 'Lerato Dlamini', '+27 73 444 5566', 'Free State', 'President Brand Street, Bloemfontein'),
-('KZN Tropical Farms', 'Sipho Nkosi', '+27 61 777 8899', 'KwaZulu-Natal', 'West Street, Durban'),
-('Cape Valley Growers', 'Anika van Wyk', '+27 84 222 3344', 'Western Cape', 'Dorp Street, Stellenbosch'),
-('Limpopo Harvest Co', 'Musa Baloyi', '+27 76 555 6677', 'Limpopo', 'N1 Road, Tzaneen');
+('ZZ2', 'Reception', '+27 15 395 2040', 'Limpopo', 'P.O. Box 19, Mooketsi, 0825'),
+('Westfalia Fruit', 'Sales enquiries', '+27 15 309 0000', 'Limpopo', 'R36 Main Road, Tzaneen, 0850'),
+('Mouton Citrus', 'Sales enquiries', '+27 22 100 0961', 'Western Cape', 'Brakfontein Landgoed, Citrusdal, 7340'),
+('Fruitways', 'Marketing', '+27 21 851 9742', 'Western Cape', 'Elgin/Grabouw, Western Cape'),
+('Capespan', 'South Africa office', '+27 21 917 2600', 'Western Cape', 'Old Oak Office Park, Bellville, 7530');
 
 -- Fruits (required types)
 INSERT INTO fruits (fruit_name, description, status) VALUES
@@ -18,13 +24,16 @@ INSERT INTO fruits (fruit_name, description, status) VALUES
 ('Mango',  'Sweet seasonal mangoes',     'Seasonal'),
 ('Grape',  'Seedless table grapes',      'Available');
 
--- Vendors (street vendors / small retailers in Lesotho)
+-- Public business names, locations and phone numbers from Google Maps listings.
+-- Registration dates are demonstration dates; they are not claimed business-registration dates.
+-- Google Maps listings: https://www.google.com/maps/search/fruit+shops+Maseru,+Lesotho/
+-- Google Maps listings: https://www.google.com/maps/search/fresh+vegetable+shops+Maseru,+Lesotho/
 INSERT INTO vendors (vendor_name, phone_number, location, registration_date) VALUES
-('Maseru Street Market',   '+266 5801 2200', 'Maseru Central',     '2026-01-15'),
-('Pioneer Retail Stall',    '+266 6203 4411', 'Pioneer Mall',       '2026-02-10'),
-('Thetsane Vendors Co-op',  '+266 5904 7788', 'Thetsane',           '2026-03-05'),
-('Ha Thetsane Fresh',       '+266 5012 9090', 'Ha Thetsane',        '2026-04-12'),
-('Roma Roadside Sellers',   '+266 6333 1212', 'Roma',               '2026-05-20');
+('Fruit & Veggies', '+266 2231 7494', 'MFMQ+QV4, Maseru', '2026-01-15'),
+('Donny''s Fresh & Dried Fruit', '+266 5628 1601', 'Lesotho Sun Road, Maseru', '2026-02-10'),
+('Mokoari Basket', '+266 5921 2202', 'Motimposo Terminus, Maseru', '2026-03-05'),
+('Maba Farm Fresh Market', '+266 6838 8279', 'Taxi (4+1) Platform, Phamole Street, Maseru', '2026-04-12'),
+('Shoprite Sefika', '+266 2232 7116', 'Sefika Shopping Centre, Moshoeshoe Road, Maseru', '2026-05-20');
 
 -- Current stock levels per fruit and packaging size (small/medium/large)
 -- Includes low-stock cases (<=10) for identification
