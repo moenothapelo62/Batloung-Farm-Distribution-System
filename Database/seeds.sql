@@ -2,19 +2,26 @@
 -- Consistent: line totals sum to purchase/sale totals; statuses/paid amounts/balances are coherent.
 USE batloung_farm;
 
--- Supplier businesses and public office contacts verified on company websites.
+-- Fruit companies and public office contacts verified on company websites;
+-- added produce-market contacts and locations are from Google Maps listings.
 -- These are sample records, not evidence of actual trading relationships.
 -- ZZ2: https://www.zz2.co.za/contact-us
 -- Westfalia Fruit: https://www.westfaliafruit.com/contact-us
 -- Mouton Citrus: https://moutoncitrus.co.za/
 -- Fruitways: https://fruitways.co.za/contact/
 -- Capespan: https://www.capespan.com/contact-us-2025/
+-- Joburg Market: https://www.google.com/maps/search/Joburg+Market+Johannesburg+South+Africa/
+-- Fresh Produce Market, Bloemfontein: https://www.google.com/maps/search/Fresh+Produce+Market+Bloemfontein+South+Africa/
+-- Fresh Produce Market - Durban: https://www.google.com/maps/search/Fresh+Produce+Market+Durban+South+Africa/
 INSERT INTO suppliers (business_name, contact_person, phone, province, address) VALUES
 ('ZZ2', 'Reception', '+27 15 395 2040', 'Limpopo', 'P.O. Box 19, Mooketsi, 0825'),
 ('Westfalia Fruit', 'Sales enquiries', '+27 15 309 0000', 'Limpopo', 'R36 Main Road, Tzaneen, 0850'),
 ('Mouton Citrus', 'Sales enquiries', '+27 22 100 0961', 'Western Cape', 'Brakfontein Landgoed, Citrusdal, 7340'),
 ('Fruitways', 'Marketing', '+27 21 851 9742', 'Western Cape', 'Elgin/Grabouw, Western Cape'),
-('Capespan', 'South Africa office', '+27 21 917 2600', 'Western Cape', 'Old Oak Office Park, Bellville, 7530');
+('Capespan', 'South Africa office', '+27 21 917 2600', 'Western Cape', 'Old Oak Office Park, Bellville, 7530'),
+('Joburg Market', 'Market office', '+27 11 992 8000', 'Gauteng', '4 Fortune St, City Deep, Johannesburg, 2049'),
+('Fresh Produce Market', 'Market office', '+27 51 410 4500', 'Free State', 'Rudolf Greyling St, Linquinda, Bloemfontein, 9301'),
+('Fresh Produce Market - Durban', 'Market office', '+27 31 311 5100', 'KwaZulu-Natal', '81 Flower Rd, Clairwood, Durban, 4052');
 
 -- Fruits (required types)
 INSERT INTO fruits (fruit_name, description, status) VALUES
