@@ -1,9 +1,7 @@
 ﻿-- Batloung Farm Fresh Produce Distribution Management System
 -- MySQL 8+ schema (DIWA2110)
 
-DROP DATABASE IF EXISTS batloung_farm;
-CREATE DATABASE batloung_farm;
-USE batloung_farm;
+USE railway;
 
 -- Suppliers (Supplier ID, business name, contact person, phone, province, address)
 CREATE TABLE suppliers (
