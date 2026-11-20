@@ -3,9 +3,9 @@
 Web-based Distribution Management System for **Batloung Farm (Maseru, Lesotho)** to manage suppliers, fruits, vendors, purchases, sales, stock levels, payments, and reports. It replaces manual notebooks/spreadsheets with a MySQL-backed Node.js/Express REST API and a React (Vite) frontend.
 
 ## Test / Submission Deliverables
-- **Live link:** _add your deployed frontend URL here_
-- **GitHub repository link:** _add your repository URL here_
-- **Demo video:** _add your recorded demo link here_
+- **Live link:** [Batloung Farm Distribution System](https://batloung-farm-distribution-system-b.vercel.app)
+- **GitHub repository link:** [Batloung-Farm-Distribution-System](https://github.com/moenothapelo62/Batloung-Farm-Distribution-System)
+- **Demo video:** [Watch the Batloung Farm demonstration](https://github.com/moenothapelo62/Batloung-Farm-Distribution-System/releases/download/demo-video/demo-video.mp4)
 
 > Fill in the links above before submission.
 
