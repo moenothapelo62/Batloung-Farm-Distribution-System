@@ -5,7 +5,7 @@ Web-based Distribution Management System for **Batloung Farm (Maseru, Lesotho)**
 ## Test / Submission Deliverables
 - **Live link:** [Batloung Farm Distribution System](https://batloung-farm-distribution-system-b.vercel.app)
 - **GitHub repository link:** [Batloung-Farm-Distribution-System](https://github.com/moenothapelo62/Batloung-Farm-Distribution-System)
-- **Demo video:** [Watch the Batloung Farm demonstration](https://github.com/moenothapelo62/Batloung-Farm-Distribution-System/releases/download/demo-video/demo-video.mp4)
+- **Demo video:** [Watch the Batloung Farm demonstration](https://github.com/moenothapelo62/Batloung-Farm-Distribution-System/releases/tag/demo-video)
 
 > Fill in the links above before submission.
 
